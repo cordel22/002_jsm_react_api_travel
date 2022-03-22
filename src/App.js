@@ -14,6 +14,7 @@ const App = () => {
   const [bounds, setBounds] = useState(null);
 
   useEffect(() => {
+    console.log(coordinates, bounds);
     getPlacesData()
       .then((data) => {
         console.log(data);
