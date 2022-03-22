@@ -4,7 +4,7 @@ const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary'
 
 
 const options = {
-  method: 'GET',
+  method: 'GET',    //    where the fuk is GET 1:05:27?
   /* url: 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary', */
   params: {
     bl_latitude: '11.847676',
@@ -32,7 +32,7 @@ axios.request(options).then(function (response) {
 	console.error(error);
 }); */
 
-export const getPlacesData = async () => {
+export const getPlacesData = async (sw, ne) => {
   try {
     const /* response */{ data: { data } } = await axios.get(URL, options);
 

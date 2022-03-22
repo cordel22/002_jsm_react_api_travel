@@ -20,8 +20,8 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log(coordinates, bounds);
-    getPlacesData()
+    /* console.log(coordinates, bounds) */;
+    getPlacesData(bounds.sw, bounds.ne)
       .then((data) => {
         console.log(data);
 
@@ -50,3 +50,6 @@ const App = () => {
 }
 
 export default App;
+
+
+
