@@ -4,7 +4,7 @@ const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary'
 
 
 const options = {
-  method: 'GET',    //    where the fuk is GET 1:05:27?
+  /* method: 'GET', */    //    where the fuk is GET 1:05:27?
   /* url: 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary', */
   params: {
     bl_latitude: '11.847676',
